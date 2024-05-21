@@ -1,8 +1,6 @@
 module Main where
 
-import qualified MyLib (someFunc)
+import HCat (runHCat)
 
 main :: IO ()
-main = do
-  putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+main = HCat.runHCat
